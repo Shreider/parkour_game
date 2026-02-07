@@ -1,25 +1,25 @@
 {
     "version": 1,
-    "name": "PlayerControls",
+    "name": "PlayerInputActions",
     "maps": [
         {
-            "name": "Gameplay",
-            "id": "cb4f3216-689f-46ea-893b-e0ea1350d6ea",
+            "name": "Player",
+            "id": "4f6fec2f-4faf-4590-a96c-2fb8fadfedee",
             "actions": [
                 {
-                    "name": "Look",
+                    "name": "Move",
                     "type": "Value",
-                    "id": "f8c58234-6636-45f8-ac9d-032fe11d5efb",
-                    "expectedControlType": "Vector2",
+                    "id": "7a8d4334-7744-4d4a-8803-a8d5302aef71",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Move",
+                    "name": "Look",
                     "type": "Value",
-                    "id": "4b387439-94c3-42b6-b7c0-29a6b14f3e8e",
-                    "expectedControlType": "Vector2",
+                    "id": "762c3288-b722-4b7d-be1c-48316e5ed65c",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -27,16 +27,25 @@
                 {
                     "name": "Jump",
                     "type": "Button",
-                    "id": "53a62b6e-306c-46e5-99ab-cce734602cf9",
+                    "id": "3f989481-c1a5-4216-ba7f-ba86f4802dbe",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "JumpAlt",
+                    "type": "Button",
+                    "id": "ab9c886d-dcdb-42d1-91e8-ad6fa65e96f0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Hold",
                     "initialStateCheck": false
                 },
                 {
                     "name": "Sprint",
                     "type": "Button",
-                    "id": "b1ec76a9-0afc-45f1-a8d3-dc1ea09782d3",
+                    "id": "c024a461-b7a3-4085-81b2-84f6476cdf36",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -45,19 +54,8 @@
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "826d738b-b361-45d1-a553-868ded4b3dc8",
-                    "path": "<Mouse>/delta",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
                     "name": "2D Vector",
-                    "id": "8f586531-41b3-4cdf-bad7-2aced6f5d055",
+                    "id": "9d4286c0-50b8-4e1d-babd-420e070bc09a",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -68,7 +66,7 @@
                 },
                 {
                     "name": "up",
-                    "id": "15cddc23-efbe-440f-b3fc-fc8e487ee195",
+                    "id": "2bac2a90-31b5-42e7-98ac-de2a9c694042",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -79,7 +77,7 @@
                 },
                 {
                     "name": "down",
-                    "id": "1f970df0-df84-475a-8aa1-5dd0f7aaccaa",
+                    "id": "cb9c1de8-6676-4576-a944-7b698e424d36",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
@@ -90,7 +88,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "d0a1970b-d1b0-44a0-b301-0ca34fb40dda",
+                    "id": "9550e042-0dcb-4ddd-8c34-85b3eee06a4d",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -101,7 +99,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "23cf19be-087c-43ac-bc20-ac7b53ef73c3",
+                    "id": "82a80592-d7ed-471e-aea1-9b22f47fefd9",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -112,7 +110,18 @@
                 },
                 {
                     "name": "",
-                    "id": "8908078a-94bf-423f-88c9-146ebfdc02ba",
+                    "id": "36680979-c762-477c-b1be-878e886a93cb",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1da8d336-e869-42a5-a330-c9e6ecbf4c55",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
@@ -123,12 +132,23 @@
                 },
                 {
                     "name": "",
-                    "id": "c66e44c3-a5ab-49aa-bf2e-bb1a9de213e1",
+                    "id": "00901437-dc74-4bd8-ad2e-c242872af146",
                     "path": "<Keyboard>/leftShift",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a1fed5c6-43c1-4138-85c6-3b689c96248b",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JumpAlt",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
